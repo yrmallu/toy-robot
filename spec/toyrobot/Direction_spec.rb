@@ -4,7 +4,7 @@ describe Direction do
   let(:direction) { Direction.new.face(:NORTH) }
 
   it "Current direction should be same as specified direction to face during construction" do
-    direction.currentdirection.should eq(:NORTH)
+    direction.current_direction.should eq(:NORTH)
   end
 
   describe '#face' do
@@ -14,33 +14,33 @@ describe Direction do
 
     it "face specified valid direction" do
       direction = Direction.new.face(:EAST)
-      direction.currentdirection.should eq(:EAST)
+      direction.current_direction.should eq(:EAST)
     end
   end
 
-  describe '#turnleft' do
+  describe '#turn_left' do
     it "changes the current direction to the left, NORTH to WEST" do
-      direction.turnleft
-      direction.currentdirection.should eq(:WEST)
+      direction.turn_left
+      direction.current_direction.should eq(:WEST)
     end
   end
 
-  describe '#turnright' do
+  describe '#turn_right' do
     it "turn right, makes direction change to the right, from NORTH to EAST" do
-      direction.turnright
-      direction.currentdirection.should eq(:EAST)
+      direction.turn_right
+      direction.current_direction.should eq(:EAST)
     end
   end
 
   it "turn right then left, facing should remain the same" do
-    direction.turnright
-    direction.turnleft
-    direction.currentdirection.should eq(:NORTH)
+    direction.turn_right
+    direction.turn_left
+    direction.current_direction.should eq(:NORTH)
   end
 
   it "turn left then right, facing should remain the same" do
-    direction.turnleft
-    direction.turnright
-    direction.currentdirection.should eq(:NORTH)
+    direction.turn_left
+    direction.turn_right
+    direction.current_direction.should eq(:NORTH)
   end
 end

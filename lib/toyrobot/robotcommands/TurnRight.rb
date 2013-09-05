@@ -5,7 +5,7 @@ class TurnRight < RobotCommands::Command
   end
 
   def execute
-    @robot.direction.turnright
+    @robot.direction.turn_right
   end
 end
 end

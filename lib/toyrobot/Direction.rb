@@ -10,22 +10,22 @@ class Direction
 
     raise StandardError if hash[initial_facing].nil?
 
-    while currentdirection != initial_facing
-      turnleft
+    while current_direction != initial_facing
+      turn_left
     end
 
     self
   end
 
-  def turnleft
+  def turn_left
     @directions.unshift(@directions.pop)
   end
 
-  def turnright
+  def turn_right
     @directions.push(@directions.shift)
   end
 
-  def currentdirection
+  def current_direction
     @directions[0]
   end
 end

@@ -10,6 +10,6 @@ describe 'RobotCommands::TurnRight' do
 
   it 'Turns robot to the right' do
     RobotCommands::TurnRight.new(robot).execute
-    robot.direction.currentdirection.should eq(:EAST)
+    robot.direction.current_direction.should eq(:EAST)
   end
 end

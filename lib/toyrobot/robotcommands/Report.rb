@@ -5,7 +5,7 @@ class Report < RobotCommands::Command
   end
 
   def execute
-    puts @robot.position.x.to_s << ',' << @robot.position.y.to_s << ',' + @robot.direction.currentdirection.to_s
+    puts @robot.position.x.to_s << ',' << @robot.position.y.to_s << ',' + @robot.direction.current_direction.to_s
   end
 end
 end

@@ -5,7 +5,7 @@ class MoveRobot < RobotCommands::Command
   end
 
   def execute
-    case @robot.direction.currentdirection
+    case @robot.direction.current_direction
     when :NORTH
       RobotCommands::MoveNorth.new(@robot, @tabletop).execute
     when :SOUTH
