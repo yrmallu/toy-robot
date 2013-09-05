@@ -1,4 +1,4 @@
-require './table/TableRange'
+require './lib/table/TableRange'
 
 describe 'TableRange' do
   let(:tablerange) { TableRange.new(0,5) }

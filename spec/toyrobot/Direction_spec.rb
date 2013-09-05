@@ -1,4 +1,4 @@
-require './toyrobot/Direction.rb'
+require './lib/toyrobot/Direction.rb'
 
 describe Direction do
   let(:direction) { Direction.new.face(:NORTH) }

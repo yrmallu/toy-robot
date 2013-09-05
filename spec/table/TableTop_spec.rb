@@ -1,6 +1,6 @@
-require './table/TableRange'
-require './table/TableTop'
-require './table/TablePosition'
+require './lib//table/TableRange'
+require './lib//table/TableTop'
+require './lib//table/TablePosition'
 
 describe 'TableTop' do
   let(:tabletop) { TableTop.new }

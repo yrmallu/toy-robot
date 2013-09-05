@@ -1,4 +1,4 @@
-require './table/TableRange'
+require './lib/table/TableRange'
 
 class TableTop
   attr_accessor :width, :height

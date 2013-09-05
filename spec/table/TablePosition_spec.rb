@@ -1,4 +1,4 @@
-require './table/TablePosition'
+require './lib/table/TablePosition'
 
 describe "Table Position" do
   let(:tableposition) {  TablePosition.new(1,1) }

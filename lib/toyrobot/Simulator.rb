@@ -57,6 +57,6 @@ class Simulator
 
   # @param string line
   def extractcommand(line)
-    /^MOVE$|^LEFT$|^RIGHT$|^REPORT$|^(PLACE),(\d),(\d),(.*)$/.match(line)
+    /^MOVE$|^LEFT$|^RIGHT$|^REPORT$|^(PLACE)\s(\d),(\d),(.*)$/.match(line)
   end
 end

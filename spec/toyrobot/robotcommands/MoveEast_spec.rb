@@ -1,9 +1,9 @@
-require './toyrobot/robotcommands/Command'
-require './toyrobot/robotcommands/MoveEast'
-require './table/TableTop'
-require './table/TablePosition'
-require './toyrobot/Direction'
-require './toyrobot/Robot'
+require './lib/toyrobot/robotcommands/Command'
+require './lib/toyrobot/robotcommands/MoveEast'
+require './lib/table/TableTop'
+require './lib/table/TablePosition'
+require './lib/toyrobot/Direction'
+require './lib/toyrobot/Robot'
 
 describe 'RobotCommands::MoveEast' do
   let(:robot) { Robot.new(Direction.new.face(:EAST), TablePosition.new(1,1)) }
