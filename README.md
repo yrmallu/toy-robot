@@ -51,11 +51,13 @@ REPORT
 Output: 3,3,NORTH
 
 ## Usage
-Run ruby ToyRobotSimulator.rb
+Run 
+ruby bin/ToyRobotSimulator.rb
 Toy robot simulator will read from STDIN. It will time out if you do not type anything and exit. Alternatively you can type the command 'quit'.
 
 ## Specs
-Run from the main directory rspec spec/
+Run from the main directory 
+rspec spec/
 
 ## licence
 toy-robot-simulation is licensed under the GNU Lesser General Public License.
